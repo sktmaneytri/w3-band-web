@@ -1,0 +1,486 @@
+.main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header__nav-bar {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.header__nav-bar--item:first-child{
+    display: inline-block;
+}
+.header__nav-bar--item {
+    font-size: 1.6rem;
+    display: inline-block;
+    position: relative;
+}
+.header__nav-bar--item a {
+    color: var(--white-color);
+    text-decoration: none;
+    line-height: 47px;
+    padding: 0 24px;
+    display: block;
+}
+
+.header__nav-bar--item:hover a {
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+.header__nav-bar-icon {
+    font-size: 14px;
+    padding: 4px 2px 1px;
+}
+.header__last-nav-bar:hover .header__nav-bar--item--more-nav {
+    display: block;
+    color: var(--black-color);
+    background-color: #ccc;
+}
+.header__nav-bar--item--more-nav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    top: 100%;
+    min-width: 160px;
+    left: 0;
+}
+
+.header__more-nav--item a {
+    width: 100%;
+}
+
+.header__more-nav--item a:hover {
+    background-color: var(--white-color);
+    color: #999;
+}
+
+.mobile__menu-btn,
+.header__search {
+    float: right;
+    line-height: 46px;
+    padding: 5px 15px 0; 
+}
+
+.header__search-icon{
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.mobile__menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.mobile__menu-btn:hover {
+    background-color: #ccc;
+}
+.mobile__menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+.header__search:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+.slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    color: var(--white-color);
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider-content__heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.slider-content__description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.content {
+
+}
+
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0 64px ;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.content-section__heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.content-section__sub-heading {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.content-section__text {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 25px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.content-team {
+    display: flex;
+    margin-top: 48px;
+}
+
+.content-team__member {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.content-team__member-name {
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.content-team__member-img {
+    margin: 0 0 16px;
+    width: 153px;
+    border-radius: 4px;
+}
+
+.ticket-section {
+    background-color: var(--black-color);
+}
+
+.ticket-list {
+    background-color: var(--white-color);
+    list-style: none;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.ticket-list .sold-out {
+    color: var(--white-color);
+    background-color: #f44336;
+    padding: 0 8px;
+    margin: 0 0 0 16px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    padding: 4px 10px;
+    margin: -3px 16px 0 0;
+    background-color: var(--black-color);
+    border-radius: 50%;
+}
+
+.content-place__list {
+    display: flex;
+    margin: 32px -10px 48px;
+}
+
+.content-place__img {
+    width: 100%;
+    display: block;
+}
+
+.content-place__img:hover {
+    opacity: 0.7;
+}
+.content-place__body {
+    background-color: var(--white-color);
+    padding: 0.15px 16px;
+    color: var(--black-color);
+}
+
+.content-heading {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.content-date {
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.6;
+    line-height: 1.3;
+}
+
+
+.content-description {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.content-button {
+    text-decoration: none;
+    background-color: var(--black-color);
+    padding: 8px 16px;
+    font-size: 15px;
+    margin: 0 0 16px;
+    display: inline-block;
+}
+
+.content-button:hover {
+    background-color: #ccc;
+    color: var(--black-color) !important;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+.modal-container {
+    background-color: var(--white-color);
+    min-height: 200px;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 19px;
+    color: var(--white-color);
+}
+.modal-close i {
+    font-size: 12px;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: var(--black-color) !important;
+    cursor: pointer;
+}
+
+.modal-heading {
+    color: var(--white-color);
+    height: 129px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.heading-icon  {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 0.15px 16px;
+}
+
+.modal-label {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.modal-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.buy-ticket {
+    color: #fff;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid #009688;
+    font-size: 15px;
+
+}
+
+.buy-ticket:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-link:hover {
+    opacity: 1;
+}
+
+.modal-footer {
+    display: flex;
+    padding: 0.15px 16px;
+    justify-content: space-between;
+}
+
+.footer-close {
+    margin: 16px 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: #f44336;
+    color: var(--white-color);
+    border: none;
+
+}
+
+.footer-close:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.footer-close i {
+    font-size: 13px;
+}
+
+.footer-help {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+.footer-help a {
+    color: #2196F3;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-infor {
+    font-size: 15px;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.contact-icon {
+    width: 20px;
+    display: inline-block;
+}
+
+.contact-input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.name-email-message {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit {
+    float: right;
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--black-color);
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+.map-section .map-img {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+}
+
+.footer__social-list ,
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    font-size: 24px;
+    color: var(--black-color);
+    text-decoration: none;
+    margin-right: 6px;
+    opacity: 0.6;
+}
+
+.footer-icon:hover {
+    opacity: 0.3;
+}
+.footer-description {
+    font-size: 15px;
+    color: var(--black-color);
+    opacity: 0.5;
+    margin: 25px 0 30px;
+    font-size: 400;
+}
